@@ -11,6 +11,7 @@ const timer = setInterval(() => {
         setLed(led, set = !set);
     } else {
         setLed(led, false);
+        led.unexport();
         clearInterval(timer);
     }
 }, 500);
