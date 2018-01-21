@@ -2,6 +2,7 @@ const os = require('os');
 
 if (os.platform() === 'linux') {
     module.exports = require('onoff').Gpio;
+    return;
 } 
 
 console.warn(`WARN: Platform ${os.platform()} does not support GPIO. Returning mock instead.`);
