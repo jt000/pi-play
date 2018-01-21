@@ -1,18 +1,16 @@
-import { setInterval, clearInterval } from 'timers';
-
-const Gpio = require('onoff').Gpio,
+const Gpio = require('./gpio'),
       led = new Gpio(17, 'out');
 
 var count = 10;
 var set = false;
 
-setLed(false);
+setLed(led, false);
 
 const timer = setInterval(() => {
     if (count-- > 0) {
-        setLed(set = !set);
+        setLed(led, set = !set);
     } else {
-        setLed(false);
+        setLed(led, false);
         clearInterval(timer);
     }
 }, 500);
