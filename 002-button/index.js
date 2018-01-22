@@ -8,6 +8,10 @@ let pressed = false;
 setLed(led, false);
 
 button.watch((err, value) => {
+    if (err) {
+        console.log(`ERROR: ${err.message}`);
+    }
+
     if (!pressed && value) {
         pressed = true;
         setLed(led, set = !set);
