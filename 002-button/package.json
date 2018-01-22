@@ -1,0 +1,19 @@
+{
+  "name": "pi-play-002-button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jt000",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "gpio": "file:../gpio"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-config-jt000": "file:../eslint-config-jt000"
+  }
+}
