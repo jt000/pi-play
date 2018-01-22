@@ -1,8 +1,8 @@
-const Gpio = require('./gpio'),
-      led = new Gpio(17, 'out');
+const Gpio = require('gpio');
+const led = new Gpio(17, 'out');
 
-var count = 10;
-var set = false;
+let count = 10;
+let set = false;
 
 setLed(led, false);
 
@@ -22,6 +22,6 @@ function setLed(led, value) {
         led.writeSync(1);
     } else {
         console.log('LED OFF');
-        led.writeSync(0);        
+        led.writeSync(0);
     }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "pi-play-001-blinkled",
+  "name": "gpio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,11 +9,6 @@
   "author": "jt000",
   "license": "UNLICENSED",
   "dependencies": {
-    "gpio": "file:../gpio"
-  },
-  "devDependencies": {
-    "eslint": "^4.16.0",
-    "eslint-config-google": "^0.9.1",
-    "eslint-config-jt000": "file:../eslint-config-jt000"
+    "onoff": "^1.1.9"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-jt000",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {  },
+  "peerDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-google": "^0.9.1"
+  }
+}
